@@ -1,0 +1,149 @@
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.form__main__container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+}
+.form__wrapper__container {
+  width: 1024px;
+  padding: 50px;
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(2, 1fr);
+}
+.form__form__container {
+  display: flex;
+  flex-direction: column;
+}
+.form__heading > p {
+  width: 300px;
+}
+.form__input {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.form__input > input {
+  width: 280px;
+  height: 30px;
+  outline: none;
+  padding: 0 10px;
+}
+.form__remember__fpassword {
+  width: 305px;
+  display: flex;
+  margin-top: 10px;
+}
+.form__remember__fpassword a {
+  margin-left: 80px;
+}
+.form__form__container > button {
+  width: 305px;
+  background-color: blue;
+  color: #fff;
+  padding: 10px;
+  outline: none;
+  border: none;
+  margin-top: 10px;
+  cursor: pointer;
+}
+.form__line__or {
+  position: relative;
+  width: 305px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.form__line__or > hr {
+  width: 100%;
+}
+.form__line {
+  width: 300px;
+  border: dotted;
+  margin-top: 10px;
+}
+.form__or {
+  display: flex;
+  justify-content: center;
+
+  position: absolute;
+  top: -4px;
+  left: 50%;
+  background-color: #fff;
+  font-size: 18px;
+}
+.form__google__facebook {
+  display: flex;
+  flex-direction: column;
+  width: 305px;
+  gap: 10px;
+}
+
+.form__google__facebook > button {
+  background-color: blue;
+  color: #fff;
+  padding: 10px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
+.form__images__container {
+  display: grid;
+  grid-gap: 5px;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  grid-auto-rows: 75px;
+  grid-auto-flow: dense;
+  height: 100%;
+  overflow: hidden;
+}
+.horizontal {
+  grid-column: span 2;
+
+  border-radius: 8px;
+}
+.vertical {
+  grid-row: span 2;
+
+  border-radius: 8px;
+}
+.big {
+  grid-column: span 2;
+  grid-row: span 2;
+
+  border-radius: 8px;
+}
+.other {
+  border-radius: 8px;
+}
+.horizontal > img {
+  width: 100%;
+  object-fit: cover;
+  height: 100%;
+  border-radius: 8px;
+}
+.big > img {
+  width: 100%;
+  object-fit: cover;
+  height: 100%;
+  border-radius: 8px;
+}
+.vertical > img {
+  width: 100%;
+  object-fit: cover;
+  height: 100%;
+  border-radius: 8px;
+}
+.other > img {
+  width: 100%;
+  object-fit: cover;
+  height: 100%;
+  border-radius: 8px;
+}
+.form__link {
+  text-decoration: none;
+}
